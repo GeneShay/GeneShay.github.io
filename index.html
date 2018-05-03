@@ -5,25 +5,22 @@
 <link rel="image_src" href="http://media.philly.com/images/dixon-484571-f-wp-content-uploads-2018-04-1127508_992cfa1ccd7d390-e1524668975100-1200x801.jpg"> 
  
  <script type="text/javascript">
+    // load Branch
     (function(b,r,a,n,c,h,_,s,d,k){if(!b[n]||!b[n]._q){for(;s<_.length;)c(h,_[s++]);d=r.createElement(a);d.async=1;d.src="https://cdn.branch.io/branch-latest.min.js";k=r.getElementsByTagName(a)[0];k.parentNode.insertBefore(d,k);b[n]=h}})(window,document,"script","branch",function(b,r){b[r]=function(){b._q.push([r,arguments])}},{_q:[],_v:1},"addListener applyCode autoAppIndex banner closeBanner closeJourney creditHistory credits data deepview deepviewCta first getCode init link logout redeem referrals removeListener sendSMS setBranchViewData setIdentity track validateCode trackCommerceEvent".split(" "), 0);
-      // init Branch
-      function branchInit() {
-        console.log('******************BranchInit');
-        branch.init("key_live_gimC2ehxzwjHcbyQzXQxfdmpvzcgkwsC");
-        branchInit = function(){};
-      }
-      // optional additional deep link data
-      var linkData = {
-        channel: "website",
-        tags: ["food"],
-        data: {
+    // init Branch
+    branch.init('key_live_kaFuWw8WvY7yn1d9yYiP8gokwqjV0Swt');
+ </script>
+    var linkData = {
+       channel: "website",
+       tags: ["food"],
+       data: {
           "$og_title": "Philly.com",
           "$og_description": "Philly.com is your source for all Philadelphia news. Check out 24-hour breaking news, sports, weather, entertainment and more.",
           "$og_image_url":"https://is2-ssl.mzstatic.com/image/thumb/Purple127/v4/6d/a9/da/6da9da4d-0f28-6de6-7af7-caa901c7820c/mzl.kfxhwncg.png/400x400bb.jpg",
           "guid": "123455"
         }
-      };
-      branch.setBranchViewData(linkData);
+     };
+     branch.setBranchViewData(linkData);
 </script>
 </head>
 </html>
